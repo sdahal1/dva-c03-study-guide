@@ -1,0 +1,36 @@
+# macOS and editor metadata
+.DS_Store
+**/.DS_Store
+.obsidian/
+**/.obsidian/
+.vscode/
+.idea/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.aws/
+**/.aws/
+*.pem
+*.key
+
+# Python and temporary files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.tmp
+*.log
+
+# Local-only material pending redistribution review
+aws-dva-notes/
+udemy-course-notes/
+
+# Duplicate document exports
+**/PDF Files/
+
+# Intermediate Anki generation artifacts
+flashcards/**/fragments/
+flashcards/**/review/
