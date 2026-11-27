@@ -27,10 +27,8 @@ venv/
 # Local-only material
 archive/
 udemy-course-notes/
+flashcards/
+exam-prep/
 
 # Duplicate document exports
 **/PDF Files/
-
-# Intermediate Anki generation artifacts
-flashcards/**/fragments/
-flashcards/**/review/
