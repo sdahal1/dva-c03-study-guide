@@ -24,8 +24,8 @@ venv/
 *.tmp
 *.log
 
-# Local-only material pending redistribution review
-aws-dva-notes/
+# Local-only material
+archive/
 udemy-course-notes/
 
 # Duplicate document exports

@@ -1,54 +1,34 @@
-# Sources and publishing notes
+# Sources
 
-This file records which workspace material can enter a public GitHub repository and which material needs a rights check first.
+This guide merges four study collections into one structure. The originals remain on the local machine in `archive/`, which Git ignores, so they are not part of the GitHub repository.
 
-## Primary authority
+## Authority
 
-Use these sources to verify exam scope and technical claims:
+Use these to settle scope and technical questions:
 
 - [AWS Certified Developer - Associate](https://aws.amazon.com/certification/certified-developer-associate/)
 - [DVA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/developer-associate-03.html)
 - [AWS documentation](https://docs.aws.amazon.com/)
 
-AWS owns its service names, certification marks, documentation, diagrams, and badge artwork. Linking to AWS material does not transfer ownership or grant redistribution rights.
+AWS owns its service names, certification marks, documentation, and diagrams. Notes link to AWS pages and embed some AWS documentation images with source captions.
 
-## Included collections
+## Merged collections
 
-### `dva-c03-study-notes/`
+| Collection | What it contributed | Rights status |
+|---|---|---|
+| DVA-C03 study notes (`archive/dva-c03-study-notes/`) | Concise notes by skill number, glossary, cheat sheet | No license or provenance record in the workspace |
+| DVA-C03 detailed guides (`archive/dva-c03/`) | Deep dives, worked scenarios, labs, practice questions, full exams, exam banks | No license or provenance record in the workspace |
+| [yashsinghviwork/aws-dva-notes](https://github.com/yashsinghviwork/aws-dva-notes) (`archive/aws-dva-notes/`) | Service-by-service notes, exam tips and traps, DVA-C03 AI chapter, exam-day cheat sheet | Public repository with no license, so the author keeps all rights |
+| Official exam guide summary | `00-foundations/exam-guide.md` and the study tracker | Paraphrased from AWS |
 
-Concise notes organized by the DVA-C03 domains. The workspace does not contain a separate license or provenance record for this collection. Confirm authorship before applying an open-source license.
+Each skill note's Sources section names the archived files it merged, as plain text, and links the AWS pages used to settle conflicts.
 
-### `dva-c03/`
+## Not merged
 
-Detailed domain guides, labs, practice questions, and exam banks. The workspace does not contain a separate license or provenance record for this collection. Confirm authorship and the rights to any embedded diagrams or copied questions before public publication.
+- `udemy-course-notes/` stays separate and git-ignored. It holds notes from a paid course still in progress.
+- Duplicate PDF exports of the service notes were not carried over.
+- `flashcards/` was left unchanged.
 
-### `flashcards/`
+## Keep the repository private
 
-Generated study-card source files derived from repository notes. Keep traceable source references in each card. Do not publish cards based on material that the repository cannot redistribute.
-
-## Excluded local collections
-
-The root `.gitignore` excludes these directories from Git:
-
-### `aws-dva-notes/`
-
-This directory mirrors material associated with [`yashsinghviwork/aws-dva-notes`](https://github.com/yashsinghviwork/aws-dva-notes). The source repository does not expose a license in the local copy. Attribution alone does not grant redistribution rights, so keep the mirror out of this repository unless its owner provides a license or permission.
-
-### `udemy-course-notes/`
-
-These notes derive from a paid course. Keep them local unless the course owner permits redistribution. Paraphrasing reduces copying but does not settle every copyright or contractual issue.
-
-### PDF exports
-
-The PDF files duplicate Markdown content and increase repository size. `.gitignore` excludes directories named `PDF Files`.
-
-## Before making the repository public
-
-- Confirm authorship and licensing for `dva-c03/` and `dva-c03-study-notes/`.
-- Remove or replace AWS badge artwork and diagrams if their reuse terms do not allow publication.
-- Check practice questions for copied exam or commercial question-bank content.
-- Scan Git history and files for credentials, account IDs, email addresses, and personal data.
-- Check links and time-sensitive service limits against current AWS documentation.
-- Choose a license only for material you have the right to license.
-
-Until those checks are complete, use a private GitHub repository.
+Material from `aws-dva-notes` is adapted throughout the notes, and its source repository grants no license. Private personal study use is reasonable. Before making this repository public, get the author's permission or rewrite the affected material, and confirm the origin of the two `dva-c03` collections.

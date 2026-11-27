@@ -2,13 +2,13 @@
 
 > Study summary based on the official [AWS DVA-C03 exam guide](https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/developer-associate-03.html), accessed November 26, 2026.
 
-> This is the working study guide and progress tracker. [`exam-guide.md`](exam-guide.md) remains the clean AWS blueprint and source-of-truth summary.
+> This is the working study guide and progress tracker. [`00-foundations/exam-guide.md`](00-foundations/exam-guide.md) remains the clean AWS blueprint and source-of-truth summary.
 
 ## How to use this guide
 
 1. Work through the tasks in domain order.
-2. Read the primary domain notes, then open service notes only where you need more depth.
-3. Use the deep dives and labs after you understand the core material.
+2. Open the task folder and read each skill note in order.
+3. Do the task's labs after you understand the skill notes.
 4. Answer task or domain questions without notes.
 5. Mark a skill complete only when you can explain it, distinguish its common alternatives, and answer scenario questions about it.
 6. Record incorrect answers by skill number so that review stays tied to the official exam outline.
@@ -18,11 +18,8 @@
 Use sources in this order when they disagree:
 
 1. **Official AWS exam guide and current AWS documentation:** final authority for scope and service behavior.
-2. **[`dva-c03-study-notes/`](dva-c03-study-notes/):** primary domain-organized explanation.
-3. **[`aws-dva-notes/`](aws-dva-notes/):** detailed service notes and established DVA-C02 material that carries into DVA-C03.
-4. **[`dva-c03/`](dva-c03/):** deep dives, labs, scenarios, and practice questions. Verify its scope and factual claims against AWS.
-
-The downloaded repositories are reference material. This guide follows the 72 official skills rather than combining almost 489,000 words into one reading sequence.
+2. **Skill notes in the domain folders:** merged from every study collection in this workspace and checked against AWS documentation where sources conflicted.
+3. **Practice questions, labs, and exam banks:** practice prompts, not authoritative answers. Verify disputed explanations against current AWS documentation.
 
 ## Progress dashboard
 
@@ -139,49 +136,46 @@ Source: [Official Domain 1 details](https://docs.aws.amazon.com/aws-certificatio
 
 **Study sources**
 
-- Primary: [Domain 1 notes](dva-c03-study-notes/01-development-with-aws-services.md)
-- Service notes: [SDK and IAM roles](<aws-dva-notes/Markdown Files/9. CLI, SDK, IAM Roles & Policies.md>), [messaging](<aws-dva-notes/Markdown Files/16. Messaging - SQS, SNS & Kinesis.md>), [API Gateway](<aws-dva-notes/Markdown Files/20. Serverless - API Gateway.md>), [DVA-C03 AI](<aws-dva-notes/Markdown Files/30. AI Services & Security (DVA-C03).md>)
-- Deep dives: [Domain 1 overview](dva-c03/domain-1-development/README.md), [idempotency and retries](dva-c03/domain-1-development/idempotency-and-retry-patterns.md), [AI-assisted development](dva-c03/domain-1-development/ai-assisted-development.md)
-- Practice: [Domain 1 questions](dva-c03/practice-questions/domain-1-questions.md)
+- Task folder: [Task 1.1 overview](domain-1-development-with-aws-services/task-1.1-build-application-code/README.md)
+- Labs: [Task 1.1 labs](domain-1-development-with-aws-services/task-1.1-build-application-code/labs.md)
+- Practice: [Task 1.1 questions](domain-1-development-with-aws-services/task-1.1-build-application-code/practice-questions.md)
 
-- [ ] **1.1.1:** Recognize tight and loose coupling, then select AWS services that decouple components.
-- [ ] **1.1.2:** Choose synchronous, asynchronous, or event-driven communication. Know common patterns involving API Gateway, SQS, and EventBridge.
-- [ ] **1.1.3:** Build resilient applications with bounded retries, exponential backoff, failure handling, and graceful degradation.
-- [ ] **1.1.4:** Create and maintain APIs, including request and response transformations and input validation.
-- [ ] **1.1.5:** Call AWS services from application code through service APIs and AWS SDKs.
-- [ ] **1.1.6:** Process and manage streaming data with AWS services.
-- [ ] **1.1.7:** Serialize and deserialize data exchanged between application code and AWS services.
-- [ ] **1.1.8:** Implement event-driven applications with services such as EventBridge, S3 Event Notifications, SQS, and SNS.
-- [ ] **1.1.9:** Use AI-assisted tools for code generation, review, completion, refactoring, optimization, and security scanning.
-- [ ] **1.1.10:** Integrate managed AWS AI services into applications.
+- [ ] **[1.1.1](domain-1-development-with-aws-services/task-1.1-build-application-code/1.1.1-coupling-and-decoupling.md):** Recognize tight and loose coupling, then select AWS services that decouple components.
+- [ ] **[1.1.2](domain-1-development-with-aws-services/task-1.1-build-application-code/1.1.2-communication-patterns.md):** Choose synchronous, asynchronous, or event-driven communication. Know common patterns involving API Gateway, SQS, and EventBridge.
+- [ ] **[1.1.3](domain-1-development-with-aws-services/task-1.1-build-application-code/1.1.3-resilience-retries-and-backoff.md):** Build resilient applications with bounded retries, exponential backoff, failure handling, and graceful degradation.
+- [ ] **[1.1.4](domain-1-development-with-aws-services/task-1.1-build-application-code/1.1.4-apis-transformation-and-validation.md):** Create and maintain APIs, including request and response transformations and input validation.
+- [ ] **[1.1.5](domain-1-development-with-aws-services/task-1.1-build-application-code/1.1.5-aws-sdks-and-service-apis.md):** Call AWS services from application code through service APIs and AWS SDKs.
+- [ ] **[1.1.6](domain-1-development-with-aws-services/task-1.1-build-application-code/1.1.6-streaming-data.md):** Process and manage streaming data with AWS services.
+- [ ] **[1.1.7](domain-1-development-with-aws-services/task-1.1-build-application-code/1.1.7-serialization-and-deserialization.md):** Serialize and deserialize data exchanged between application code and AWS services.
+- [ ] **[1.1.8](domain-1-development-with-aws-services/task-1.1-build-application-code/1.1.8-event-driven-applications.md):** Implement event-driven applications with services such as EventBridge, S3 Event Notifications, SQS, and SNS.
+- [ ] **[1.1.9](domain-1-development-with-aws-services/task-1.1-build-application-code/1.1.9-ai-assisted-development-tools.md):** Use AI-assisted tools for code generation, review, completion, refactoring, optimization, and security scanning.
+- [ ] **[1.1.10](domain-1-development-with-aws-services/task-1.1-build-application-code/1.1.10-managed-ai-service-integration.md):** Integrate managed AWS AI services into applications.
 
 #### Task 1.2: Develop AWS Lambda functions
 
 **Study sources**
 
-- Primary: [Domain 1 notes](dva-c03-study-notes/01-development-with-aws-services.md)
-- Service notes: [Lambda](<aws-dva-notes/Markdown Files/18. Serverless - Lambda.md>), [VPC basics](<aws-dva-notes/Markdown Files/7. VPC - Basics.md>)
-- Deep dive: [Lambda event source mappings](dva-c03/domain-1-development/lambda-event-source-mapping-deep-dive.md)
-- Practice: [Domain 1 questions](dva-c03/practice-questions/domain-1-questions.md)
+- Task folder: [Task 1.2 overview](domain-1-development-with-aws-services/task-1.2-develop-lambda-functions/README.md)
+- Labs: [Task 1.2 labs](domain-1-development-with-aws-services/task-1.2-develop-lambda-functions/labs.md)
+- Practice: [Task 1.2 questions](domain-1-development-with-aws-services/task-1.2-develop-lambda-functions/practice-questions.md)
 
-- [ ] **1.2.1:** Give Lambda functions access to private resources inside a VPC.
-- [ ] **1.2.2:** Configure environment variables, memory, concurrency, timeouts, runtimes, handlers, layers, and extensions.
-- [ ] **1.2.3:** Handle invocation lifecycles and failures with destinations, retries, and dead-letter queues.
-- [ ] **1.2.4:** Integrate Lambda with services such as API Gateway and DynamoDB through code, event source mappings, triggers, and destinations.
+- [ ] **[1.2.1](domain-1-development-with-aws-services/task-1.2-develop-lambda-functions/1.2.1-lambda-vpc-access.md):** Give Lambda functions access to private resources inside a VPC.
+- [ ] **[1.2.2](domain-1-development-with-aws-services/task-1.2-develop-lambda-functions/1.2.2-lambda-configuration.md):** Configure environment variables, memory, concurrency, timeouts, runtimes, handlers, layers, and extensions.
+- [ ] **[1.2.3](domain-1-development-with-aws-services/task-1.2-develop-lambda-functions/1.2.3-lambda-invocation-lifecycle-and-failures.md):** Handle invocation lifecycles and failures with destinations, retries, and dead-letter queues.
+- [ ] **[1.2.4](domain-1-development-with-aws-services/task-1.2-develop-lambda-functions/1.2.4-lambda-service-integrations.md):** Integrate Lambda with services such as API Gateway and DynamoDB through code, event source mappings, triggers, and destinations.
 
 #### Task 1.3: Use data stores in application development
 
 **Study sources**
 
-- Primary: [Domain 1 notes](dva-c03-study-notes/01-development-with-aws-services.md)
-- Service notes: [DynamoDB](<aws-dva-notes/Markdown Files/19. Serverless - DynamoDB.md>), [S3](<aws-dva-notes/Markdown Files/8. S3 Introduction.md>), [RDS, Aurora, and ElastiCache](<aws-dva-notes/Markdown Files/5. RDS, Aurora, & ElastiCache.md>)
-- Deep dive: [Domain 1 overview](dva-c03/domain-1-development/README.md)
-- Practice: [Domain 1 questions](dva-c03/practice-questions/domain-1-questions.md)
+- Task folder: [Task 1.3 overview](domain-1-development-with-aws-services/task-1.3-use-data-stores/README.md)
+- Labs: [Task 1.3 labs](domain-1-development-with-aws-services/task-1.3-use-data-stores/labs.md)
+- Practice: [Task 1.3 questions](domain-1-development-with-aws-services/task-1.3-use-data-stores/practice-questions.md)
 
-- [ ] **1.3.1:** Manage data lifecycles with S3 Lifecycle rules, TTL settings, and retention periods.
-- [ ] **1.3.2:** Select ElastiCache, DynamoDB, S3, RDS, or another suitable store based on access patterns and application requirements.
-- [ ] **1.3.3:** Choose a caching approach that fits the selected data store and freshness requirements.
-- [ ] **1.3.4:** Configure DynamoDB partition keys, consistency, queries, scans, attributes, and indexes for application access patterns.
+- [ ] **[1.3.1](domain-1-development-with-aws-services/task-1.3-use-data-stores/1.3.1-data-lifecycle-management.md):** Manage data lifecycles with S3 Lifecycle rules, TTL settings, and retention periods.
+- [ ] **[1.3.2](domain-1-development-with-aws-services/task-1.3-use-data-stores/1.3.2-choosing-data-stores.md):** Select ElastiCache, DynamoDB, S3, RDS, or another suitable store based on access patterns and application requirements.
+- [ ] **[1.3.3](domain-1-development-with-aws-services/task-1.3-use-data-stores/1.3.3-caching-strategies.md):** Choose a caching approach that fits the selected data store and freshness requirements.
+- [ ] **[1.3.4](domain-1-development-with-aws-services/task-1.3-use-data-stores/1.3.4-dynamodb-design-and-operations.md):** Configure DynamoDB partition keys, consistency, queries, scans, attributes, and indexes for application access patterns.
 
 ### Domain 2: Security (26%)
 
@@ -191,50 +185,47 @@ Source: [Official Domain 2 details](https://docs.aws.amazon.com/aws-certificatio
 
 **Study sources**
 
-- Primary: [Domain 2 notes](dva-c03-study-notes/02-security.md)
-- Service notes: [IAM and CLI](<aws-dva-notes/Markdown Files/1. IAM & AWS CLI.md>), [Cognito](<aws-dva-notes/Markdown Files/24. Cognito - User Pools, Identity Pools & Cognito Sync.md>), [advanced identity](<aws-dva-notes/Markdown Files/26. Advanced Identity.md>), [S3 security](<aws-dva-notes/Markdown Files/11. S3 Security.md>)
-- Deep dive: [IAM policy evaluation](dva-c03/domain-2-security/iam-policy-evaluation-logic.md)
-- Practice: [Domain 2 questions](dva-c03/practice-questions/domain-2-questions.md)
+- Task folder: [Task 2.1 overview](domain-2-security/task-2.1-authentication-and-authorization/README.md)
+- Labs: [Task 2.1 labs](domain-2-security/task-2.1-authentication-and-authorization/labs.md)
+- Practice: [Task 2.1 questions](domain-2-security/task-2.1-authentication-and-authorization/practice-questions.md)
 
-- [ ] **2.1.1:** Implement identity federation for application users or workforce identities.
-- [ ] **2.1.2:** Apply access controls such as fine-grained permissions, temporary security tokens, and MFA.
-- [ ] **2.1.3:** Configure secure programmatic access to AWS.
-- [ ] **2.1.4:** Provide time-limited access with mechanisms such as S3 presigned URLs and CloudFront signed access.
-- [ ] **2.1.5:** Make authenticated requests to AWS services.
-- [ ] **2.1.6:** Define permissions for IAM users, roles, services, and resources according to least privilege.
-- [ ] **2.1.7:** Assume IAM roles and use the resulting temporary credentials.
+- [ ] **[2.1.1](domain-2-security/task-2.1-authentication-and-authorization/2.1.1-identity-federation.md):** Implement identity federation for application users or workforce identities.
+- [ ] **[2.1.2](domain-2-security/task-2.1-authentication-and-authorization/2.1.2-access-controls-tokens-and-mfa.md):** Apply access controls such as fine-grained permissions, temporary security tokens, and MFA.
+- [ ] **[2.1.3](domain-2-security/task-2.1-authentication-and-authorization/2.1.3-secure-programmatic-access.md):** Configure secure programmatic access to AWS.
+- [ ] **[2.1.4](domain-2-security/task-2.1-authentication-and-authorization/2.1.4-time-limited-access.md):** Provide time-limited access with mechanisms such as S3 presigned URLs and CloudFront signed access.
+- [ ] **[2.1.5](domain-2-security/task-2.1-authentication-and-authorization/2.1.5-authenticated-requests.md):** Make authenticated requests to AWS services.
+- [ ] **[2.1.6](domain-2-security/task-2.1-authentication-and-authorization/2.1.6-least-privilege-permissions.md):** Define permissions for IAM users, roles, services, and resources according to least privilege.
+- [ ] **[2.1.7](domain-2-security/task-2.1-authentication-and-authorization/2.1.7-assuming-iam-roles.md):** Assume IAM roles and use the resulting temporary credentials.
 
 #### Task 2.2: Encrypt and protect sensitive data
 
 **Study sources**
 
-- Primary: [Domain 2 notes](dva-c03-study-notes/02-security.md)
-- Service notes: [AWS security and encryption](<aws-dva-notes/Markdown Files/27. AWS Security & Encryption.md>), [S3 security](<aws-dva-notes/Markdown Files/11. S3 Security.md>)
-- Deep dive: [Lambda environment variables and secrets](dva-c03/domain-2-security/securing-lambda-environment-variables-and-secrets.md)
-- Practice: [Domain 2 questions](dva-c03/practice-questions/domain-2-questions.md)
+- Task folder: [Task 2.2 overview](domain-2-security/task-2.2-encrypt-and-protect-sensitive-data/README.md)
+- Labs: [Task 2.2 labs](domain-2-security/task-2.2-encrypt-and-protect-sensitive-data/labs.md)
+- Practice: [Task 2.2 questions](domain-2-security/task-2.2-encrypt-and-protect-sensitive-data/practice-questions.md)
 
-- [ ] **2.2.1:** Apply encryption both at rest and in transit.
-- [ ] **2.2.2:** Manage public and private certificates with ACM and AWS Private CA.
-- [ ] **2.2.3:** Choose and implement client-side or server-side encryption.
-- [ ] **2.2.4:** Use encryption keys to protect and recover data, including KMS-based patterns.
-- [ ] **2.2.5:** Generate certificates and SSH keys for development needs.
-- [ ] **2.2.6:** Detect, mask, and restrict access to sensitive data such as PII and PHI.
-- [ ] **2.2.7:** Store and retrieve sensitive values with managed secret services.
+- [ ] **[2.2.1](domain-2-security/task-2.2-encrypt-and-protect-sensitive-data/2.2.1-encryption-at-rest-and-in-transit.md):** Apply encryption both at rest and in transit.
+- [ ] **[2.2.2](domain-2-security/task-2.2-encrypt-and-protect-sensitive-data/2.2.2-certificate-management.md):** Manage public and private certificates with ACM and AWS Private CA.
+- [ ] **[2.2.3](domain-2-security/task-2.2-encrypt-and-protect-sensitive-data/2.2.3-client-side-vs-server-side-encryption.md):** Choose and implement client-side or server-side encryption.
+- [ ] **[2.2.4](domain-2-security/task-2.2-encrypt-and-protect-sensitive-data/2.2.4-kms-key-management.md):** Use encryption keys to protect and recover data, including KMS-based patterns.
+- [ ] **[2.2.5](domain-2-security/task-2.2-encrypt-and-protect-sensitive-data/2.2.5-development-certificates-and-ssh-keys.md):** Generate certificates and SSH keys for development needs.
+- [ ] **[2.2.6](domain-2-security/task-2.2-encrypt-and-protect-sensitive-data/2.2.6-sensitive-data-detection-and-masking.md):** Detect, mask, and restrict access to sensitive data such as PII and PHI.
+- [ ] **[2.2.7](domain-2-security/task-2.2-encrypt-and-protect-sensitive-data/2.2.7-secrets-management.md):** Store and retrieve sensitive values with managed secret services.
 
 #### Task 2.3: Secure the use of AI services
 
 **Study sources**
 
-- Primary: [Domain 2 notes](dva-c03-study-notes/02-security.md)
-- Service notes: [AI services and security](<aws-dva-notes/Markdown Files/30. AI Services & Security (DVA-C03).md>)
-- Deep dives: [AI service security](dva-c03/domain-2-security/ai-service-security-risks.md), [prompt injection and generative AI security](dva-c03/domain-2-security/prompt-injection-and-genai-security-deep-dive.md)
-- Practice: [Domain 2 questions](dva-c03/practice-questions/domain-2-questions.md)
+- Task folder: [Task 2.3 overview](domain-2-security/task-2.3-secure-ai-services/README.md)
+- Labs: [Task 2.3 labs](domain-2-security/task-2.3-secure-ai-services/labs.md)
+- Practice: [Task 2.3 questions](domain-2-security/task-2.3-secure-ai-services/practice-questions.md)
 
-- [ ] **2.3.1:** Request, grant, restrict, and manage access to AI services.
-- [ ] **2.3.2:** Protect data sent to AI services with private connectivity and data-use controls, including VPC endpoints and no-training commitments.
-- [ ] **2.3.3:** Filter model inputs and outputs for harmful content, sensitive information, denied topics, prompt injection, and manipulation attempts.
-- [ ] **2.3.4:** Secure AI agents with tool authorization, isolated sessions, and human approval before sensitive actions.
-- [ ] **2.3.5:** Prevent prompts, responses, PII, PHI, and other sensitive content from leaking through monitoring logs.
+- [ ] **[2.3.1](domain-2-security/task-2.3-secure-ai-services/2.3.1-ai-service-access-control.md):** Request, grant, restrict, and manage access to AI services.
+- [ ] **[2.3.2](domain-2-security/task-2.3-secure-ai-services/2.3.2-ai-data-privacy-and-private-connectivity.md):** Protect data sent to AI services with private connectivity and data-use controls, including VPC endpoints and no-training commitments.
+- [ ] **[2.3.3](domain-2-security/task-2.3-secure-ai-services/2.3.3-ai-input-and-output-filtering.md):** Filter model inputs and outputs for harmful content, sensitive information, denied topics, prompt injection, and manipulation attempts.
+- [ ] **[2.3.4](domain-2-security/task-2.3-secure-ai-services/2.3.4-ai-agent-security.md):** Secure AI agents with tool authorization, isolated sessions, and human approval before sensitive actions.
+- [ ] **[2.3.5](domain-2-security/task-2.3-secure-ai-services/2.3.5-ai-sensitive-data-in-logs.md):** Prevent prompts, responses, PII, PHI, and other sensitive content from leaking through monitoring logs.
 
 ### Domain 3: Testing and Deployment (22%)
 
@@ -244,50 +235,47 @@ Source: [Official Domain 3 details](https://docs.aws.amazon.com/aws-certificatio
 
 **Study sources**
 
-- Primary: [Domain 3 notes](dva-c03-study-notes/03-testing-deployment.md)
-- Service notes: [containers](<aws-dva-notes/Markdown Files/13. Containers on AWS.md>), [CloudFormation](<aws-dva-notes/Markdown Files/15. CloudFormation.md>), [API Gateway](<aws-dva-notes/Markdown Files/20. Serverless - API Gateway.md>)
-- Deep dive: [Domain 3 overview](dva-c03/domain-3-testing-deployment/README.md)
-- Practice: [Domain 3 questions](dva-c03/practice-questions/domain-3-questions.md)
+- Task folder: [Task 3.1 overview](domain-3-testing-and-deployment/task-3.1-prepare-deployable-artifacts/README.md)
+- Labs: [Task 3.1 labs](domain-3-testing-and-deployment/task-3.1-prepare-deployable-artifacts/labs.md)
+- Practice: [Task 3.1 questions](domain-3-testing-and-deployment/task-3.1-prepare-deployable-artifacts/practice-questions.md)
 
-- [ ] **3.1.1:** Package code dependencies, configuration files, environment variables, and related artifacts correctly.
-- [ ] **3.1.2:** Build and manage container images with Dockerfiles, ECR repositories, image tags, and lifecycle policies.
-- [ ] **3.1.3:** Use code repositories as part of deployment workflows.
-- [ ] **3.1.4:** Keep environment-specific configuration in services such as AppConfig, Parameter Store, Secrets Manager, API Gateway, and Lambda.
-- [ ] **3.1.5:** Configure API Gateway resources such as stages, endpoints, and stage-specific URLs.
+- [ ] **[3.1.1](domain-3-testing-and-deployment/task-3.1-prepare-deployable-artifacts/3.1.1-packaging-dependencies-and-configuration.md):** Package code dependencies, configuration files, environment variables, and related artifacts correctly.
+- [ ] **[3.1.2](domain-3-testing-and-deployment/task-3.1-prepare-deployable-artifacts/3.1.2-container-images-and-ecr.md):** Build and manage container images with Dockerfiles, ECR repositories, image tags, and lifecycle policies.
+- [ ] **[3.1.3](domain-3-testing-and-deployment/task-3.1-prepare-deployable-artifacts/3.1.3-code-repositories-in-deployment.md):** Use code repositories as part of deployment workflows.
+- [ ] **[3.1.4](domain-3-testing-and-deployment/task-3.1-prepare-deployable-artifacts/3.1.4-environment-specific-configuration.md):** Keep environment-specific configuration in services such as AppConfig, Parameter Store, Secrets Manager, API Gateway, and Lambda.
+- [ ] **[3.1.5](domain-3-testing-and-deployment/task-3.1-prepare-deployable-artifacts/3.1.5-api-gateway-stages-and-endpoints.md):** Configure API Gateway resources such as stages, endpoints, and stage-specific URLs.
 
 #### Task 3.2: Test applications in AWS environments
 
 **Study sources**
 
-- Primary: [Domain 3 notes](dva-c03-study-notes/03-testing-deployment.md)
-- Service notes: [AWS SAM](<aws-dva-notes/Markdown Files/22. SAM - Serverless Application Model.md>), [AWS CDK](<aws-dva-notes/Markdown Files/23. CDK - Cloud Development Kit.md>)
-- Deep dive: [serverless testing strategies](dva-c03/domain-3-testing-deployment/testing-strategies-for-serverless-apps.md)
-- Practice: [Domain 3 questions](dva-c03/practice-questions/domain-3-questions.md)
+- Task folder: [Task 3.2 overview](domain-3-testing-and-deployment/task-3.2-test-applications/README.md)
+- Labs: [Task 3.2 labs](domain-3-testing-and-deployment/task-3.2-test-applications/labs.md)
+- Practice: [Task 3.2 questions](domain-3-testing-and-deployment/task-3.2-test-applications/practice-questions.md)
 
-- [ ] **3.2.1:** Develop and validate tests with tools and templates such as AWS SAM, AWS CDK, and CloudFormation.
-- [ ] **3.2.2:** Replace external dependencies with mock APIs through services and tools such as API Gateway.
-- [ ] **3.2.3:** Create representative test events, including JSON payloads for Lambda functions and API Gateway APIs.
-- [ ] **3.2.4:** Create isolated test environments with Lambda aliases, container tags, Amplify branches, Copilot environments, and API Gateway APIs.
-- [ ] **3.2.5:** Use AWS AI tools to generate tests, run repetitive test workflows, analyze results, automate regression testing, and find coverage gaps.
+- [ ] **[3.2.1](domain-3-testing-and-deployment/task-3.2-test-applications/3.2.1-testing-with-sam-cdk-and-cloudformation.md):** Develop and validate tests with tools and templates such as AWS SAM, AWS CDK, and CloudFormation.
+- [ ] **[3.2.2](domain-3-testing-and-deployment/task-3.2-test-applications/3.2.2-mock-apis.md):** Replace external dependencies with mock APIs through services and tools such as API Gateway.
+- [ ] **[3.2.3](domain-3-testing-and-deployment/task-3.2-test-applications/3.2.3-test-events-and-payloads.md):** Create representative test events, including JSON payloads for Lambda functions and API Gateway APIs.
+- [ ] **[3.2.4](domain-3-testing-and-deployment/task-3.2-test-applications/3.2.4-isolated-test-environments.md):** Create isolated test environments with Lambda aliases, container tags, Amplify branches, Copilot environments, and API Gateway APIs.
+- [ ] **[3.2.5](domain-3-testing-and-deployment/task-3.2-test-applications/3.2.5-ai-assisted-testing.md):** Use AWS AI tools to generate tests, run repetitive test workflows, analyze results, automate regression testing, and find coverage gaps.
 
 #### Task 3.3: Deploy through AWS CI/CD services
 
 **Study sources**
 
-- Primary: [Domain 3 notes](dva-c03-study-notes/03-testing-deployment.md)
-- Service notes: [CI/CD](<aws-dva-notes/Markdown Files/21. CICD - CodeCommit, CodePipeline, CodeBuild, CodeDeploy.md>), [CloudFormation](<aws-dva-notes/Markdown Files/15. CloudFormation.md>), [containers](<aws-dva-notes/Markdown Files/13. Containers on AWS.md>)
-- Deep dives: [deployment strategies](dva-c03/domain-3-testing-deployment/blue-green-canary-linear-deployment-strategies.md), [IaC drift](dva-c03/domain-3-testing-deployment/iac-drift-detection-and-remediation.md)
-- Practice: [Domain 3 questions](dva-c03/practice-questions/domain-3-questions.md)
+- Task folder: [Task 3.3 overview](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/README.md)
+- Labs: [Task 3.3 labs](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/labs.md)
+- Practice: [Task 3.3 questions](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/practice-questions.md)
 
-- [ ] **3.3.1:** Select efficient Lambda packaging methods, including ZIP archives, container images, and layers.
-- [ ] **3.3.2:** Deploy containers through ECS task definitions, EKS manifests, Fargate launch types, and rolling updates.
-- [ ] **3.3.3:** Define and deploy infrastructure with CloudFormation and AWS SAM templates.
-- [ ] **3.3.4:** Deploy application revisions to target environments with CodeDeploy.
-- [ ] **3.3.5:** Use CodePipeline to connect source repositories and promote releases through multiple environments.
-- [ ] **3.3.6:** Choose and implement blue/green, canary, or rolling deployment strategies.
-- [ ] **3.3.7:** Configure automatic or manual rollback through services such as CloudFormation and CodeDeploy.
-- [ ] **3.3.8:** Manage versions and releases with source-control branches, labels, and related features.
-- [ ] **3.3.9:** Use AWS AI tools for deployment approvals, environment provisioning, and post-deployment validation.
+- [ ] **[3.3.1](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/3.3.1-lambda-packaging.md):** Select efficient Lambda packaging methods, including ZIP archives, container images, and layers.
+- [ ] **[3.3.2](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/3.3.2-container-deployments.md):** Deploy containers through ECS task definitions, EKS manifests, Fargate launch types, and rolling updates.
+- [ ] **[3.3.3](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/3.3.3-infrastructure-as-code-deployment.md):** Define and deploy infrastructure with CloudFormation and AWS SAM templates.
+- [ ] **[3.3.4](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/3.3.4-codedeploy.md):** Deploy application revisions to target environments with CodeDeploy.
+- [ ] **[3.3.5](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/3.3.5-codepipeline-release-promotion.md):** Use CodePipeline to connect source repositories and promote releases through multiple environments.
+- [ ] **[3.3.6](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/3.3.6-deployment-strategies.md):** Choose and implement blue/green, canary, or rolling deployment strategies.
+- [ ] **[3.3.7](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/3.3.7-rollback.md):** Configure automatic or manual rollback through services such as CloudFormation and CodeDeploy.
+- [ ] **[3.3.8](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/3.3.8-versions-and-releases.md):** Manage versions and releases with source-control branches, labels, and related features.
+- [ ] **[3.3.9](domain-3-testing-and-deployment/task-3.3-deploy-with-ci-cd/3.3.9-ai-assisted-deployment.md):** Use AWS AI tools for deployment approvals, environment provisioning, and post-deployment validation.
 
 ### Domain 4: Troubleshooting and Optimization (22%)
 
@@ -297,56 +285,52 @@ Source: [Official Domain 4 details](https://docs.aws.amazon.com/aws-certificatio
 
 **Study sources**
 
-- Primary: [Domain 4 notes](dva-c03-study-notes/04-troubleshooting-optimization.md)
-- Service notes: [monitoring, troubleshooting, and audit](<aws-dva-notes/Markdown Files/17. Monitoring, Troubleshooting & Audit.md>)
-- Deep dives: [CloudWatch Logs Insights debugging](dva-c03/domain-4-troubleshooting-optimization/cloudwatch-logs-insights-debugging.md), [Lambda cold-start diagnosis](dva-c03/domain-4-troubleshooting-optimization/lambda-cold-start-diagnosis.md)
-- Practice: [Domain 4 questions](dva-c03/practice-questions/domain-4-questions.md)
+- Task folder: [Task 4.1 overview](domain-4-troubleshooting-and-optimization/task-4.1-root-cause-analysis/README.md)
+- Labs: [Task 4.1 labs](domain-4-troubleshooting-and-optimization/task-4.1-root-cause-analysis/labs.md)
+- Practice: [Task 4.1 questions](domain-4-troubleshooting-and-optimization/task-4.1-root-cause-analysis/practice-questions.md)
 
-- [ ] **4.1.1:** Debug application code and service integrations to identify defects.
-- [ ] **4.1.2:** Interpret metrics, logs, and distributed traces.
-- [ ] **4.1.3:** Query logs to isolate relevant events and evidence.
-- [ ] **4.1.4:** Diagnose deployment failures from build and deployment output logs.
-- [ ] **4.1.5:** Use AWS AI tools to analyze errors and propose troubleshooting steps.
+- [ ] **[4.1.1](domain-4-troubleshooting-and-optimization/task-4.1-root-cause-analysis/4.1.1-debugging-code-and-integrations.md):** Debug application code and service integrations to identify defects.
+- [ ] **[4.1.2](domain-4-troubleshooting-and-optimization/task-4.1-root-cause-analysis/4.1.2-metrics-logs-and-traces.md):** Interpret metrics, logs, and distributed traces.
+- [ ] **[4.1.3](domain-4-troubleshooting-and-optimization/task-4.1-root-cause-analysis/4.1.3-querying-logs.md):** Query logs to isolate relevant events and evidence.
+- [ ] **[4.1.4](domain-4-troubleshooting-and-optimization/task-4.1-root-cause-analysis/4.1.4-diagnosing-deployment-failures.md):** Diagnose deployment failures from build and deployment output logs.
+- [ ] **[4.1.5](domain-4-troubleshooting-and-optimization/task-4.1-root-cause-analysis/4.1.5-ai-assisted-error-analysis.md):** Use AWS AI tools to analyze errors and propose troubleshooting steps.
 
 #### Task 4.2: Apply observability practices
 
 **Study sources**
 
-- Primary: [Domain 4 notes](dva-c03-study-notes/04-troubleshooting-optimization.md)
-- Service notes: [monitoring, troubleshooting, and audit](<aws-dva-notes/Markdown Files/17. Monitoring, Troubleshooting & Audit.md>)
-- Deep dive: [observability instrumentation](dva-c03/domain-4-troubleshooting-optimization/observability-instrumentation.md)
-- Practice: [Domain 4 questions](dva-c03/practice-questions/domain-4-questions.md)
+- Task folder: [Task 4.2 overview](domain-4-troubleshooting-and-optimization/task-4.2-observability/README.md)
+- Labs: [Task 4.2 labs](domain-4-troubleshooting-and-optimization/task-4.2-observability/labs.md)
+- Practice: [Task 4.2 questions](domain-4-troubleshooting-and-optimization/task-4.2-observability/practice-questions.md)
 
-- [ ] **4.2.1:** Implement structured logging that records application behavior, state, events, and user actions.
-- [ ] **4.2.2:** Write application code that emits useful custom metrics.
-- [ ] **4.2.3:** Send alerts for conditions such as quota thresholds and completed deployments.
-- [ ] **4.2.4:** Instrument distributed tracing with AWS services and tools.
-- [ ] **4.2.5:** Monitor workload health through application health checks and container liveness and readiness probes.
+- [ ] **[4.2.1](domain-4-troubleshooting-and-optimization/task-4.2-observability/4.2.1-structured-logging.md):** Implement structured logging that records application behavior, state, events, and user actions.
+- [ ] **[4.2.2](domain-4-troubleshooting-and-optimization/task-4.2-observability/4.2.2-custom-metrics.md):** Write application code that emits useful custom metrics.
+- [ ] **[4.2.3](domain-4-troubleshooting-and-optimization/task-4.2-observability/4.2.3-alerts-and-notifications.md):** Send alerts for conditions such as quota thresholds and completed deployments.
+- [ ] **[4.2.4](domain-4-troubleshooting-and-optimization/task-4.2-observability/4.2.4-distributed-tracing.md):** Instrument distributed tracing with AWS services and tools.
+- [ ] **[4.2.5](domain-4-troubleshooting-and-optimization/task-4.2-observability/4.2.5-health-checks-and-probes.md):** Monitor workload health through application health checks and container liveness and readiness probes.
 
 #### Task 4.3: Optimize applications
 
 **Study sources**
 
-- Primary: [Domain 4 notes](dva-c03-study-notes/04-troubleshooting-optimization.md)
-- Service notes: [Lambda](<aws-dva-notes/Markdown Files/18. Serverless - Lambda.md>), [RDS, Aurora, and ElastiCache](<aws-dva-notes/Markdown Files/5. RDS, Aurora, & ElastiCache.md>), [messaging](<aws-dva-notes/Markdown Files/16. Messaging - SQS, SNS & Kinesis.md>)
-- Deep dives: [Lambda cold-start diagnosis](dva-c03/domain-4-troubleshooting-optimization/lambda-cold-start-diagnosis.md), [cost anomaly workflow](dva-c03/domain-4-troubleshooting-optimization/cost-anomaly-detection-workflow.md)
-- Practice: [Domain 4 questions](dva-c03/practice-questions/domain-4-questions.md)
+- Task folder: [Task 4.3 overview](domain-4-troubleshooting-and-optimization/task-4.3-optimize-applications/README.md)
+- Labs: [Task 4.3 labs](domain-4-troubleshooting-and-optimization/task-4.3-optimize-applications/labs.md)
+- Practice: [Task 4.3 questions](domain-4-troubleshooting-and-optimization/task-4.3-optimize-applications/practice-questions.md)
 
-- [ ] **4.3.1:** Apply concurrency controls such as Lambda provisioned concurrency, EC2 Auto Scaling, thread pools, and connection pools.
-- [ ] **4.3.2:** Tune application memory and compute capacity.
-- [ ] **4.3.3:** Optimize messaging with SQS queues, SNS fan-out, and suitable delivery patterns.
-- [ ] **4.3.4:** Implement caching with ElastiCache, DynamoDB Accelerator (DAX), and CloudFront.
-- [ ] **4.3.5:** Detect performance bottlenecks with services such as CloudWatch.
-- [ ] **4.3.6:** Use AWS AI tools to find bottlenecks, inefficient code, and resource optimization opportunities.
+- [ ] **[4.3.1](domain-4-troubleshooting-and-optimization/task-4.3-optimize-applications/4.3.1-concurrency-controls.md):** Apply concurrency controls such as Lambda provisioned concurrency, EC2 Auto Scaling, thread pools, and connection pools.
+- [ ] **[4.3.2](domain-4-troubleshooting-and-optimization/task-4.3-optimize-applications/4.3.2-memory-and-compute-tuning.md):** Tune application memory and compute capacity.
+- [ ] **[4.3.3](domain-4-troubleshooting-and-optimization/task-4.3-optimize-applications/4.3.3-messaging-optimization.md):** Optimize messaging with SQS queues, SNS fan-out, and suitable delivery patterns.
+- [ ] **[4.3.4](domain-4-troubleshooting-and-optimization/task-4.3-optimize-applications/4.3.4-caching-for-performance.md):** Implement caching with ElastiCache, DynamoDB Accelerator (DAX), and CloudFront.
+- [ ] **[4.3.5](domain-4-troubleshooting-and-optimization/task-4.3-optimize-applications/4.3.5-performance-bottleneck-detection.md):** Detect performance bottlenecks with services such as CloudWatch.
+- [ ] **[4.3.6](domain-4-troubleshooting-and-optimization/task-4.3-optimize-applications/4.3.6-ai-assisted-optimization.md):** Use AWS AI tools to find bottlenecks, inefficient code, and resource optimization opportunities.
 
 ## Practice workflow
 
 ### After each task
 
-- [ ] Complete the primary reading.
-- [ ] Review the linked service notes where needed.
+- [ ] Read every skill note in the task folder.
 - [ ] Complete or walk through one focused lab.
-- [ ] Answer the associated domain questions.
+- [ ] Answer the task practice questions without notes.
 - [ ] Record mistakes with the official skill number and the reason each distractor failed.
 - [ ] Revisit weak skills after at least one day.
 
@@ -359,10 +343,10 @@ Source: [Official Domain 4 details](https://docs.aws.amazon.com/aws-certificatio
 
 ### Full-exam practice
 
-Use these after completing all four domains:
+Use these after completing all four domains, then work through the [exam banks](exam-prep/exam-banks/README.md):
 
-- [Full exam 1 questions](dva-c03/practice-questions/full-exams/exam-1-questions.md) and [answer key](dva-c03/practice-questions/full-exams/exam-1-answer-key.md)
-- [Full exam 2 questions](dva-c03/practice-questions/full-exams/exam-2-questions.md) and [answer key](dva-c03/practice-questions/full-exams/exam-2-answer-key.md)
+- [Full exam 1 questions](exam-prep/full-exams/exam-1-questions.md) and [answer key](exam-prep/full-exams/exam-1-answer-key.md)
+- [Full exam 2 questions](exam-prep/full-exams/exam-2-questions.md) and [answer key](exam-prep/full-exams/exam-2-answer-key.md)
 
 Treat community questions as practice prompts rather than authoritative AWS answers. Verify disputed explanations against current AWS documentation.
 
